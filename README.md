@@ -7,7 +7,8 @@ Please fork this repository to begin your front end developer test, then downloa
 Installation requires node.js on your computer
 
 npm install
-node server.json
+
+node server.js
 
 # Instructions
 There should now be a web server running at http://localhost:8888
