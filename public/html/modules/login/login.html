@@ -1,0 +1,29 @@
+<div id="login-form" ng-controller="loginController">
+    <div  ng-hide="loginError">
+        Enter your username and password and click the <strong>Sign In</strong> button to continue
+    </div>
+    <div ng-show="loginError"> 
+        Authentication Failed ({{loginError}}). Please try again.
+    </div>
+<div>
+<ul class="form-header">
+<li><label for="login"><i class="fa fa-lock"></i> LOGIN<label for="login"></li>
+</ul>
+</div>
+
+<div class="section-out">
+<section class="login-section">
+<div class="login">
+<form name="authLoginForm" novalidate>
+<ul class="ul-list">
+<li><input type="text" required class="input" placeholder="username" ng-model="username"/><span class="icon"><i class="fa fa-user"></i></span></li>
+<li><input type="password" required class="input" placeholder="Password" ng-model="password"/><span class="icon"><i class="fa fa-lock"></i></span></li>
+<li><input type="submit" value="SIGN IN" class="btn" ng-click="authenticate(username, password)"
+	                ></li>
+</ul>
+</form>
+</div>
+
+</section>
+</div>
+</div>
